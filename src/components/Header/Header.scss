@@ -1,0 +1,18 @@
+.header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: #000;
+  color: white;
+  padding: 14px;
+}
+
+.header__content {
+  display: flex;
+  margin: 0 auto;
+}
+
+.header__menu-icon {
+  cursor: pointer;
+}
