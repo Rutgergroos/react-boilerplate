@@ -22,6 +22,15 @@ rules.push({
   }]
 })
 
+rules.push({
+  test: /\.css$/,
+  use: [{
+    loader: 'style-loader'
+  }, {
+    loader: 'css-loader'
+  }]
+})
+
 const config = {
   mode: env,
   entry: './src/index.js',
