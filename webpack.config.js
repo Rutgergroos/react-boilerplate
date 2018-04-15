@@ -11,6 +11,17 @@ rules.push({
   exclude: /node_modules/
 })
 
+rules.push({
+  test: /\.scss$/,
+  use: [{
+    loader: 'style-loader'
+  }, {
+    loader: 'css-loader'
+  }, {
+    loader: 'sass-loader'
+  }]
+})
+
 const config = {
   mode: env,
   entry: './src/index.js',
