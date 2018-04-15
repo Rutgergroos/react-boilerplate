@@ -1,6 +1,7 @@
 {
   "name": "react-boilerplate",
   "version": "1.0.0",
+  "private": true,
   "scripts": {
     "start": "NODE_ENV=development webpack-dev-server"
   },
