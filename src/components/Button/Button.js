@@ -1,9 +1,14 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import cx from 'classnames'
+import './Button.scss'
 
 const Button = ({ isPrimary, children }) => {
   return (
-    <button>
+    <button
+      className={cx('button', {
+        'button--primary': isPrimary
+      })}>
       {children}
     </button>
   )
